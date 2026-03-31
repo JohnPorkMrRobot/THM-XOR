@@ -2,7 +2,7 @@ import string
 from pwn import *
 
 charset = string.ascii_letters + string.digits
-enc_flag = bytes.fromhex("393e351a1e5c17140f1a280e0c201a19421b0a0d2c180a520f013a01093b1f0201511b1f0e371313")
+enc_flag = bytes.fromhex("your hash")
 part_flag = b'THM{'
 
 part_key = xor(enc_flag, part_flag)[:4]
